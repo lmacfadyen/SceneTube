@@ -86,8 +86,8 @@
 				11E7482F1B796F7D00D3E438 /* ViewController.swift */,
 				11E748531B7A28FE00D3E438 /* LinkScene.swift */,
 				11E748311B796F7D00D3E438 /* Main.storyboard */,
-				11E748341B796F7D00D3E438 /* Images.xcassets */,
 				11E748361B796F7D00D3E438 /* LaunchScreen.xib */,
+				11E748341B796F7D00D3E438 /* Images.xcassets */,
 				11E7484D1B796FDE00D3E438 /* SceneKit.framework */,
 				11E7482B1B796F7D00D3E438 /* Supporting Files */,
 			);
