@@ -13,6 +13,8 @@
 		11E748351B796F7D00D3E438 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E748341B796F7D00D3E438 /* Images.xcassets */; };
 		11E748381B796F7D00D3E438 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11E748361B796F7D00D3E438 /* LaunchScreen.xib */; };
 		11E748441B796F7D00D3E438 /* SceneTubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E748431B796F7D00D3E438 /* SceneTubeTests.swift */; };
+		11E7484E1B796FDE00D3E438 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E7484D1B796FDE00D3E438 /* SceneKit.framework */; };
+		11E748541B7A28FE00D3E438 /* LinkScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E748531B7A28FE00D3E438 /* LinkScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		11E7483D1B796F7D00D3E438 /* SceneTubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneTubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E748421B796F7D00D3E438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11E748431B796F7D00D3E438 /* SceneTubeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTubeTests.swift; sourceTree = "<group>"; };
+		11E7484D1B796FDE00D3E438 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		11E748531B7A28FE00D3E438 /* LinkScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E7484E1B796FDE00D3E438 /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +84,11 @@
 			children = (
 				11E7482D1B796F7D00D3E438 /* AppDelegate.swift */,
 				11E7482F1B796F7D00D3E438 /* ViewController.swift */,
+				11E748531B7A28FE00D3E438 /* LinkScene.swift */,
 				11E748311B796F7D00D3E438 /* Main.storyboard */,
 				11E748341B796F7D00D3E438 /* Images.xcassets */,
 				11E748361B796F7D00D3E438 /* LaunchScreen.xib */,
+				11E7484D1B796FDE00D3E438 /* SceneKit.framework */,
 				11E7482B1B796F7D00D3E438 /* Supporting Files */,
 			);
 			path = SceneTube;
@@ -214,6 +221,7 @@
 			files = (
 				11E748301B796F7D00D3E438 /* ViewController.swift in Sources */,
 				11E7482E1B796F7D00D3E438 /* AppDelegate.swift in Sources */,
+				11E748541B7A28FE00D3E438 /* LinkScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
