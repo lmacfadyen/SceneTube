@@ -1,5 +1,5 @@
 //
-//  LinkConnection.swift
+//  LinkScene.swift
 //  SceneTube
 //
 //  Created by Lawrence F MacFadyen on 2015-08-11.
