@@ -13,8 +13,8 @@
 		11E748351B796F7D00D3E438 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E748341B796F7D00D3E438 /* Images.xcassets */; };
 		11E748381B796F7D00D3E438 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11E748361B796F7D00D3E438 /* LaunchScreen.xib */; };
 		11E748441B796F7D00D3E438 /* SceneTubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E748431B796F7D00D3E438 /* SceneTubeTests.swift */; };
-		11E7484E1B796FDE00D3E438 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E7484D1B796FDE00D3E438 /* SceneKit.framework */; };
 		11E748541B7A28FE00D3E438 /* LinkScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E748531B7A28FE00D3E438 /* LinkScene.swift */; };
+		11E748571B7A32E600D3E438 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E7484D1B796FDE00D3E438 /* SceneKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E7484E1B796FDE00D3E438 /* SceneKit.framework in Frameworks */,
+				11E748571B7A32E600D3E438 /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
