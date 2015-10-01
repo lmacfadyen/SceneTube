@@ -1,5 +1,5 @@
 # SceneTube
-SceneKit With Swift for Network Visualization
+Getting Started With SceneKit in Swift: Using SceneKit for Network Visualization
 
 Sample code on how SceneKit can be used for network visualization, specifically optical fiber signals in different layers.
 
