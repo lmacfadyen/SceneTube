@@ -15,6 +15,7 @@
 		11E748441B796F7D00D3E438 /* SceneTubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E748431B796F7D00D3E438 /* SceneTubeTests.swift */; };
 		11E748541B7A28FE00D3E438 /* LinkScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E748531B7A28FE00D3E438 /* LinkScene.swift */; };
 		11E748571B7A32E600D3E438 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E7484D1B796FDE00D3E438 /* SceneKit.framework */; };
+		11E7485F1B7CC71600D3E438 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E7485E1B7CC71600D3E438 /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		11E748431B796F7D00D3E438 /* SceneTubeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTubeTests.swift; sourceTree = "<group>"; };
 		11E7484D1B796FDE00D3E438 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		11E748531B7A28FE00D3E438 /* LinkScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkScene.swift; sourceTree = "<group>"; };
+		11E7485E1B7CC71600D3E438 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				11E7482D1B796F7D00D3E438 /* AppDelegate.swift */,
 				11E7482F1B796F7D00D3E438 /* ViewController.swift */,
 				11E748531B7A28FE00D3E438 /* LinkScene.swift */,
+				11E7485E1B7CC71600D3E438 /* Node.swift */,
 				11E748311B796F7D00D3E438 /* Main.storyboard */,
 				11E748361B796F7D00D3E438 /* LaunchScreen.xib */,
 				11E748341B796F7D00D3E438 /* Images.xcassets */,
@@ -163,11 +166,14 @@
 		11E748201B796F7D00D3E438 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = LawrenceM;
 				TargetAttributes = {
 					11E748271B796F7D00D3E438 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = T6TG5W96HH;
 					};
 					11E7483C1B796F7D00D3E438 = {
 						CreatedOnToolsVersion = 6.4;
@@ -222,6 +228,7 @@
 				11E748301B796F7D00D3E438 /* ViewController.swift in Sources */,
 				11E7482E1B796F7D00D3E438 /* AppDelegate.swift in Sources */,
 				11E748541B7A28FE00D3E438 /* LinkScene.swift in Sources */,
+				11E7485F1B7CC71600D3E438 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +291,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -350,9 +358,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SceneTube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lawrencem.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -360,9 +372,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SceneTube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lawrencem.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -380,6 +396,7 @@
 				);
 				INFOPLIST_FILE = SceneTubeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lawrencem.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SceneTube.app/SceneTube";
 			};
@@ -395,6 +412,7 @@
 				);
 				INFOPLIST_FILE = SceneTubeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lawrencem.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SceneTube.app/SceneTube";
 			};
@@ -419,6 +437,7 @@
 				11E748491B796F7D00D3E438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11E7484A1B796F7D00D3E438 /* Build configuration list for PBXNativeTarget "SceneTubeTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +446,7 @@
 				11E7484C1B796F7D00D3E438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
